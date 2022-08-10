@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section>
+        <h2 class="faq-title">FAQ</h2>
+        <div class="container">
+
+        <div class="faq">
+        <div class="faqquestion">
+        <h3>What is HTML ?</h3>
+        <svg width="15" height="10" viewbox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+
+    
+        </div>
+        <div class="faqanswer">
+            <p>
+                HTML stands for Hyper Text Markup Language <br>
+                HTML is the standard markup language for creating Web pages <br>
+                HTML describes the structure of a Web page <br>
+                HTML consists of a series of elements and 
+                HTML elements tell the browser how to display the content 
+            </p>
+        </div>
+        </div>
+
+        <div class="faq">
+            <div class="faqquestion">
+            <h3>What is Css ?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+    
+        
+            </div>
+            <div class="faqanswer">
+                <p>
+                    CSS stands for Cascading Style Sheets <br>
+                    CSS describes how HTML elements are to be displayed on screen, paper, or in other media <br>
+                    CSS saves a lot of work. It can control the layout of multiple web pages all at once <br>
+                    External stylesheets are stored in CSS files
+                    
+                </p>
+            </div>
+            </div>
+
+            <div class="faq">
+                <div class="faqquestion">
+                <h3>What is JavaScript ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+        
+            
+                </div>
+                <div class="faqanswer">
+                    <p>
+                        JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.
+                    </p>
+                </div>
+                </div>
+                <div class="faq">
+                    <div class="faqquestion">
+                    <h3>What is Python ?</h3>
+                    <svg width="15" height="10" viewbox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+            
+                
+                    </div>
+                    <div class="faqanswer">
+                        <p>
+                            Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+                            It is used for:
+                            
+                            web development (server-side),
+                            software development,
+                            mathematics,
+                            system scripting.
+                        </p>
+                    </div>
+                    </div>
+                    </div>
+    </section>
+    <script type="text/javascript">
+        const faqs = document.querySelectorAll(".faq");
+        faqs.forEach(faq   => {
+            faq.addEventListener("click" ,() => {
+                faq.classList.toggle("active");
+            })
+        })
+
+    </script>
+</body>
+</html>
